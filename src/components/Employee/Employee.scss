@@ -1,0 +1,13 @@
+.employee {
+  border: 1px solid red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__header {
+    font-size: 2rem;
+  }
+  &__subheader {
+    flex-grow: 1;
+  }
+}
