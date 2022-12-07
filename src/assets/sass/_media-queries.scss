@@ -1,11 +1,9 @@
-@use "./variables" as *;
-.grid-container {
-  padding: 0.2rem;
-  background-color: $primary-color;
-  width: 90vw;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 0.4rem;
+@use "./grid-layout";
+
+@media screen and (min-width: 10px) {
+  .grid-container {
+    grid-template-columns: 1fr, 1fr;
+  }
 }
 
 @media screen and (min-width: 762px) {

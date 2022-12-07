@@ -4,7 +4,7 @@ import Employee from "./components/Employee/Employee";
 
 const App = () => {
   const employeeArr = team.map(({ id, name, role }) => (
-    <Employee id={id} name={name} role={role} />
+    <Employee key={`${id}a`} id={id} name={name} role={role} />
   ));
 
   return (

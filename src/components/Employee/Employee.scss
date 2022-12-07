@@ -1,13 +1,20 @@
+@use "../../assets/sass/variables" as *;
 .employee {
-  border: 1px solid red;
+  padding: 0.2rem;
+  background-color: $secondary-color;
+  border: 2px solid $tertiary-color;
+  border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   &__header {
-    font-size: 2rem;
+    text-decoration: 2px underline $tertiary-color;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
   &__subheader {
+    max-width: 70%;
     flex-grow: 1;
   }
 }
