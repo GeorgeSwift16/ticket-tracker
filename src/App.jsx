@@ -1,13 +1,16 @@
 import "./App.scss";
-// import team from "./data/team";
+import team from "./data/team";
 import Employee from "./components/Employee/Employee";
-import GridContainer from "./components/Grid-Container/GridContainer";
 
 const App = () => {
+  const employeeArr = team.map(({ id, name, role }) => (
+    <Employee key={`${id}a`} id={id} name={name} role={role} />
+  ));
+
   return (
     <>
       <h1>Ticket Tracker</h1>
-      <GridContainer />
+      <section className="grid-container">{employeeArr}</section>
     </>
   );
 };

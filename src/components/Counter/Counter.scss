@@ -1,0 +1,21 @@
+@use "../../assets/sass/variables" as *;
+.employee__counter-container {
+  background-color: $tertiary-color;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.employee__counter-button-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.employee__counter-button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}

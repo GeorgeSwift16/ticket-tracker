@@ -1,11 +1,11 @@
 import "./Employee.scss";
 import Counter from "../Counter/Counter";
 
-const Employee = () => {
+const Employee = (props) => {
   return (
     <div className="employee">
-      <h2 className="employee__header">Name</h2>
-      <h3 className="employee__subheader">Role</h3>
+      <h2 className="employee__header">{props.name}</h2>
+      <h3 className="employee__subheader">{props.role}</h3>
       <Counter />
     </div>
   );
